@@ -9,9 +9,7 @@
     <div></div>
     <footer class="footer" id="footer-bar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a
-          class="navbar-brand"
-          href="https://github.com/hoandohdd/creative-project-3"
+        <a class="navbar-brand" href="https://github.com/hoandohdd/CP4"
           >Source</a
         >
       </nav>
