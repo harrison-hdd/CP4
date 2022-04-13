@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({
 const {MongoClient, ObjectId} = require("mongodb");
 
 const dbUrl = 'mongodb://localhost:27017/';
-const dbName = 'astronomyImages';
+const dbName = 'astrologyImages';
 const savedImagesCol = 'savedImages';
 const usersCol = "users";
 

@@ -11,7 +11,7 @@
             <button @click.prevent="fetchMedia(date)">
               {{ date }}
             </button>
-            <button v-on:click.prevent="unsave(i)">Unsave</button>
+            <button v-on:click.prevent="unsave(date, i)">Unsave</button>
           </li>
         </ol>
       </div>
@@ -71,12 +71,12 @@ export default {
     };
   },
   methods: {
-    async unsave(index) {
+    async unsave(date, index) {
       try {
         //delete from database
         await axios.put("/api/images/unsave", {
           username: this.$root.$data.currentUser,
-          toBeRemoved: this.$root.$data.currentDate,
+          toBeRemoved: date,
         });
 
         this.$props.currentFavorites.splice(index, 1);
